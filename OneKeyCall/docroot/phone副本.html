@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+        <meta name='apple-mobile-web-app-capable' content='yes' />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+            <link rel='apple-touch-startup-image' href='data:image/png;base64,$startupImage'/>
+            <title>$userName</title>
+            <style type='text/css'>
+                #warp { width:100%%; }
+                #warp .topmenu{line-height:45px; font-size:20px; color:#e4f5fe; font-family:'Times New Roman'; text-align:center; background:#269ad4; text-shadow:2px 2px 2px #000; }
+                #warp .content{line-height:28px; position:relative; width:94%%; margin:20px auto 0; padding-bottom:30px; color:#646464; background:#cfd7da; border:2px solid #4d4d4d; -moz-border-radius:12px; -webkit-border-radius:12px; }
+                #warp .userPic{margin-top:50px;} .userPic img{width:57px; height:57px; border:0px; padding:0px 0px; -webkit-border-radius:8px; -webkit-box-shadow: 1px 1px 1px #000;}
+                #warp .userName{line-height:24px; color:#668aa6;}
+                #warp .addPic{margin-top:10px;} .addPic img{ width:23px; height:20px; }
+                #warp .tipsText{margin-top:30px; color:#646464; text-align:10px; font-size:12px; line-height:14px;}
+                #warp .tail{position:absolute; bottom:-20px; width:200px; height:20px; background:#545454;}
+                </style>
+            <style type='text/css'>
+                #warp2 { width:100%%; }
+                #warp2 .topmenu {line-height:45px; font-size:20px; color:#e4f5fe; font-family:'Times New Roman'; text-align:center; background:#269ad4; text-shadow:2px 2px 2px #000; }
+                #warp2 .errorText{margin-top:100px;}
+                </style>
+            <script type ='text/javascript'>
+                if (!window.navigator.standalone) {
+                    window.document.write("<link rel='apple-touch-icon-precomposed' href='data:image/png;base64,$iconImage'/>");
+                    window.onload = function() { setTimeout(scrollTo, 0, 0, 1); }
+                }
+            </script>
+            </head>
+    <body style='margin-left:0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;'>
+        <a id='link' href='onekeycall://$mobile'></a>
+        <div id="warp2" style='position:absolute;left: 0; top: 0;'>
+            <div class='topmenu'><p class='box'>一键拨号</p></div>
+            <div class="errorText">
+                <p>创建一键拨号联系人快捷图标需要JavaScript支持</p>
+                <p>请在系统“设置->Safari”里面开启JavaScript</p>
+            </div>
+        </div>
+        
+        <script type='text/javascript'>
+            document.getElementById("warp2").style.display = 'none';
+            if (window.navigator.standalone){
+                var e=document.getElementById("link");
+                var ev=document.createEvent("MouseEvents");
+                ev.initEvent("click",true,true);
+                e.dispatchEvent(ev);
+            }else{
+                document.write("<style type='text/css'> * {margin:0; padding:0;}body{font-family:'Times New Roman'; background:#545454; text-align:center; font-size:16px; color:#fff;}</style>");
+                //                var run=function(){location.herf=document.getElementById("link").href;};
+                document.write("<div id='warp' style='position:absolute;left: 0; top: 0;'> <div class='topmenu'><p class='box'>一键呼叫</p></div>");
+                document.write("<div class='content'><p class='userPic'><img src='data:image/png;base64,$iconImage' onclick='run();'/></p><p class='userName'>$userName</p>");
+                document.write("<div class='addPic'><p class='msg'><p>点击屏幕下方按钮</p><p><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAoCAYAAACB4MgqAAAEqElEQVRYCe2Yf0ijdRzHncsfs5PB6fBHkAghKEi6NPAPkZYG2UjSaQgmE+FASZthlswuFJF+EERB4B9xEAThoAiOiuTAIOqCoLuTu877KV3eWQpleXi71tbrM55n7O6259mzzTahD3z2fJ/n8/2+v699nu+vLScUCuVkwnt7e609PT3zyfadm5NBM5lMXpfL9V4yCBkDb29vLxJg4J8H/lhfX5/ZyBfIGHg0JPDuYDD4EfD50c+1ylkBLoDAP8t49wFv0QJWY1kDrgA9Dfxx4A+pgPGu2QYunA7gvwLeGg9anmcjuHC1AL8CvE1uYlm2ggtrgwL/QCxwk2wEVPgjVtDgs2Um2NDS0tKGVjuy+Ajx+vz8fLvf7x/TqqvErqL7OLpXo+umA/w2wjMIvxUtrJYBlVXiKZY7F/U6KB9WYwauGwr8mtrGtLi4WLG8vHxdfWDkarFY/h4fHz/b1NQkb+wH/A18WzQALgf2BTo8wm0ysCITbVtoPUGCTsnD+6IjRsolJSV709PTZ6qqqv6i3Qf4x9JeAZ6nk+fwhDcUaatjNob0CfSdwH+XFLhAz87OniorK5Psvoqflk4RHUH8TYB112Gpn4QdRl+Wyq644D6fb0VHWCbhy/gGQocQ/JDyMzpt0hGWvl6JC67Tg0B78G2g5RV+QVlWi323mpqardHR0aNa4I/pUQAtS+kK9er06qYjXldXtz0zM/NTXl5ejxa4Zl9Am4H+5L+Cttvtv05OTq4BfZI+j6ayc76EgEPz22kE2YD+0QjfEWpubt6cmpo6D/Q3BLy4P6mMk+2HyPbsHepxbioqKnZtNtteaWnpLcp7ajWW0d2FhQW7eh/v2trausFecZH4Cfx1PCB1kwJnY5F1OuYaXV5efpPXulVbW7vT0NCwU1hYGJSOYljkS8SIhR85HI5rIyMjl7n5EpedOaJlGJxsPwi0K6ysfBQUFARaWlpudHR0bDLrb0bHKF/CZRW6oVy5hE3OHk8q5XsunZ2d60NDQ+sEPsXfvbuCYXCyfQTw8O9DriF5lW63e724uDj8CungCv41fg5fxf24Ievq6ro8MDBwjUayGy/GamwYnAnSGQgEcuScMjExsdrY2PgnwpLlz3F5pQKetPX391/o7u6+jsAxXDa1mGYInGEih6WHrVbrLa/Xe6a6unqXe3mV0sndQ4RHiZu8vcHBwTWn07lJK8myZDuuGQJH5VHGs39ubu50ZWXlFvfT+Nm46gkGzGZzcHh4+Dxz5DeavIN/ptfUEHhRUVEjE+Yi0D8jPInLOEzJBJqV41xbW5tAy8ohw00ObBbm0/u5ubkeToM78izaDG1A9fX1t+lAxrD8ckkZmvkS9Hg8q2jK8JjHVWjZJ75n+Lh5FtMMZXxsbOwXVCQrkp2UjXPHj5w/fkfoNfxbESTTLqBlzoSPxso/XqllnG1ashzuQDpJ1eTQhIbMk7Amf8W9DbSPe93zvKGMI3gST6eNI3ZBFWRovKiW9a6GxjhikS1XTzjBeAQ6wfqRakbBIw0zXYg7VPi/JZRpOK3+D2zG/wfXeq37ETuwGTex4N9PRo7vR1bSpOlE556T54HN+L8pg/J+H1kQPQAAAABJRU5ErkJggg=='/> 或 <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAoCAYAAACB4MgqAAABL0lEQVRYCe2WwQqCQBCG2/BUSEEQdOlJuiQeO+8DePCxvEqee4RepEtBJ0O6BTaHhHVZXZkdoZURRHf+/X/Xz0VG1HU9ozqklCvIK015Qoh1URQvk4apzTGmf/CQLjyO40XXS/VpXZ6+OunC+x5ErfHCqYna8pi4jRC1zsSpidrymLiNELXOxKmJ2vKYuI0QtS7Ufhz66T2Mb9QPocjT+/lpbJUoijYUdMbI0Pv5aRAfg9RYmd4Sb/1VgM4WzjOWUlVVQZIkB5M/y7JrGIYfkzawdoJ572aut8SD5g1+1ydcj1pt8DDP8x1MvpsMoMk0TR8mDVPzljgvHPO5XTxM3IUexsvEMdRcPEzchR7Gy8Qx1Fw8TNyFHsar9+OYDNWzhMFFLSj3rX5aqaNuvd0qXzUQNCEhLak5AAAAAElFTkSuQmCC'/></p><p class='msg'>然后选择“添加至主屏幕”</p>");
+                document.write("<div class='tipsText'><hr size='2px'/><p>&nbsp;</p><p align='center'>小提示:</p><p>1.若联系人的头像有所更新，请再次手动添加至桌面</p><p>2.若通讯录中联系人被删除，请删除对应桌面的图标</p></div>");
+                document.write("<div class='tail'></div></div></div></div>");
+            }
+        </script>
+    </body>
+</html>

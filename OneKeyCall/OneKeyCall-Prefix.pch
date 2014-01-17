@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'OneKeyCall' target in the 'OneKeyCall' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <AddressBook/AddressBook.h>
+    #import "Singleton.h"
+    #import "ComMethod.h"
+#endif
+
+#define _HTML @"$html"
+#define _ICONIMAGE @"$iconImage"
+#define _STARTIMAGE @"$startupImage"
+#define _USERNAME @"$userName"
+#define _MOBILE @"$mobile"

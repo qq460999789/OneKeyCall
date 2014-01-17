@@ -28,7 +28,7 @@
                 }
                 </script>
             </head>
-    <body style='margin-left:0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;background:#ff00ff'>
+    <body style='margin-left:0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px;'>
         <a id='link' href='onekeycall://$mobile'></a>
         <div id="warp2" style='position:absolute;left: 0; top: 0;'>
             <div class='topmenu'><p class='box'>一键拨号</p></div>
@@ -44,7 +44,7 @@
                 var e=document.getElementById("link");
                 var ev=document.createEvent("MouseEvents");
                 ev.initEvent("click",true,true);
-//                e.dispatchEvent(ev);
+                e.dispatchEvent(ev);
             }else{
                 document.write("<style type='text/css'> * {margin:0; padding:0;}body{font-family:'Times New Roman'; background:#545454; text-align:center; font-size:16px; color:#fff;}</style>");
 //                var run=function(){location.herf=document.getElementById("link").href;};

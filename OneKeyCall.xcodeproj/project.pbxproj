@@ -536,8 +536,8 @@
 		499B064617842C5B00DACBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Shubin Yang (CGG8C6X8GQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shubin Yang (CGG8C6X8GQ)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Wang Yupeng";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Wang Yupeng";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OneKeyCall/OneKeyCall-Prefix.pch";
 				INFOPLIST_FILE = "OneKeyCall/OneKeyCall-Info.plist";
@@ -547,8 +547,8 @@
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
 				PRODUCT_NAME = OneKeyCall;
-				PROVISIONING_PROFILE = "89440021-90D9-46B6-9F86-48ED36EF96C0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "89440021-90D9-46B6-9F86-48ED36EF96C0";
+				PROVISIONING_PROFILE = "6170AD6C-3C87-44D0-A28A-4F48D5E7BCD7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6170AD6C-3C87-44D0-A28A-4F48D5E7BCD7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+//#import "WelcomeViewController.h"
 
 @implementation AppDelegate
 
@@ -27,8 +28,11 @@
     // Override point for customization after application launch.
     
     self.viewController = [[[ViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-
     
+    
+//    self.viewController = [[[WelcomeViewController alloc] initWithNibName:@"Welcome" bundle:nil] autorelease];
+
+//       [self.navigationController setNavigationBarHidden:YES animated:NO];
 //    self.window.bounds = CGRectMake(0, -64, self.window.frame.size.width, self.window.frame.size.height);
 //    self.window.frame = CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height-20);
     
@@ -45,10 +49,28 @@
         if([urlString rangeOfString:@"onekeycall://"].location != NSNotFound ){
             urlString = [urlString stringByReplacingOccurrencesOfString:@"onekeycall" withString:@"tel"];
             [application openURL:[NSURL URLWithString:urlString]];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+               			 abort();
+			});
         }
     });
     NSLog(@"open url end");
     return NO;
+}
+
+- (void)exitApplication {
+    
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    UIWindow *window = app.window;
+    
+    [UIView animateWithDuration:1.0f animations:^{
+        window.alpha = 0;
+        window.frame = CGRectMake(0, window.bounds.size.width, 0, 0);
+    } completion:^(BOOL finished) {
+        exit(0);
+    }];
+    //exit(0);
+    
 }
 
 

@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3FE62EA29D06D4FBCEA2F656420C1C71DBCB70DA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++7633" : {
+
+    },
+    "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++171" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++7633" : 0,
+    "3FE62EA29D06D4FBCEA2F656420C1C71DBCB70DA" : 0,
+    "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++171" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F44DA248-062A-41E2-A0FD-AE72B2E4DCE0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++7633" : "OneKeyCall\/OneKeyCall\/docroot\/",
+    "3FE62EA29D06D4FBCEA2F656420C1C71DBCB70DA" : "OneKeyCall\/",
+    "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++171" : "OneKeyCall\/OneKeyCall\/CocoaWebResource\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OneKeyCall",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OneKeyCall.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/qq460999789\/OneKeyCall.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3FE62EA29D06D4FBCEA2F656420C1C71DBCB70DA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.101\/svn\/35phone",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++171"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.101\/svn\/35phone",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b3a4c5d3-1bef-0848-b9c3-f60cf9ebd6ee++7633"
+    }
+  ]
+}

@@ -39,13 +39,12 @@
 		499B062C17842C5B00DACBA3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 499B062A17842C5B00DACBA3 /* InfoPlist.strings */; };
 		499B062E17842C5B00DACBA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 499B062D17842C5B00DACBA3 /* main.m */; };
 		499B063217842C5B00DACBA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 499B063117842C5B00DACBA3 /* AppDelegate.m */; };
-		499B063417842C5B00DACBA3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 499B063317842C5B00DACBA3 /* Default.png */; };
-		499B063617842C5B00DACBA3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 499B063517842C5B00DACBA3 /* Default@2x.png */; };
-		499B063817842C5B00DACBA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 499B063717842C5B00DACBA3 /* Default-568h@2x.png */; };
 		499B063B17842C5B00DACBA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499B063A17842C5B00DACBA3 /* ViewController.m */; };
 		499B064C1784370800DACBA3 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 499B064A1784370800DACBA3 /* NSStringAdditions.m */; };
 		49AA1DDC178660E0003CE66B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 49AA1DDB178660E0003CE66B /* NSData+Base64.m */; };
 		49AA1DDE178667DC003CE66B /* images in Resources */ = {isa = PBXBuildFile; fileRef = 49AA1DDD178667DC003CE66B /* images */; };
+		85BAE89F1D13A3A00000C773 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BAE89E1D13A3A00000C773 /* Images.xcassets */; };
+		85BAE8B31D13AF9E0000C773 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BAE8B21D13AF9E0000C773 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,9 +105,6 @@
 		499B062F17842C5B00DACBA3 /* OneKeyCall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneKeyCall-Prefix.pch"; sourceTree = "<group>"; };
 		499B063017842C5B00DACBA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		499B063117842C5B00DACBA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		499B063317842C5B00DACBA3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		499B063517842C5B00DACBA3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		499B063717842C5B00DACBA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		499B063917842C5B00DACBA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		499B063A17842C5B00DACBA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		499B064A1784370800DACBA3 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
@@ -116,6 +112,8 @@
 		49AA1DDA178660E0003CE66B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		49AA1DDB178660E0003CE66B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		49AA1DDD178667DC003CE66B /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		85BAE89E1D13A3A00000C773 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		85BAE8B21D13AF9E0000C773 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +227,7 @@
 				499B063A17842C5B00DACBA3 /* ViewController.m */,
 				499017F817869CEB006E6D7C /* ContactsDetailController.h */,
 				499017F917869CEB006E6D7C /* ContactsDetailController.m */,
+				85BAE89E1D13A3A00000C773 /* Images.xcassets */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -307,6 +306,7 @@
 		499B062817842C5B00DACBA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				85BAE8B21D13AF9E0000C773 /* Launch Screen.storyboard */,
 				498333571793CFCB006B637E /* icon.png */,
 				49AA1DDD178667DC003CE66B /* images */,
 				49925DAA178546C00014D652 /* docroot */,
@@ -314,9 +314,6 @@
 				499B062A17842C5B00DACBA3 /* InfoPlist.strings */,
 				499B062D17842C5B00DACBA3 /* main.m */,
 				499B062F17842C5B00DACBA3 /* OneKeyCall-Prefix.pch */,
-				499B063317842C5B00DACBA3 /* Default.png */,
-				499B063517842C5B00DACBA3 /* Default@2x.png */,
-				499B063717842C5B00DACBA3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -379,10 +376,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BAE8B31D13AF9E0000C773 /* Launch Screen.storyboard in Resources */,
 				499B062C17842C5B00DACBA3 /* InfoPlist.strings in Resources */,
-				499B063417842C5B00DACBA3 /* Default.png in Resources */,
-				499B063617842C5B00DACBA3 /* Default@2x.png in Resources */,
-				499B063817842C5B00DACBA3 /* Default-568h@2x.png in Resources */,
+				85BAE89F1D13A3A00000C773 /* Images.xcassets in Resources */,
 				49925DAB178546C00014D652 /* docroot in Resources */,
 				49AA1DDE178667DC003CE66B /* images in Resources */,
 				498333581793CFCB006B637E /* icon.png in Resources */,
@@ -516,19 +512,21 @@
 		499B064517842C5B00DACBA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Shubin Yang (CGG8C6X8GQ)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shubin Yang (CGG8C6X8GQ)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wanjiang mao (J8M6Z4P3DH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wanjiang mao (J8M6Z4P3DH)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OneKeyCall/OneKeyCall-Prefix.pch";
 				INFOPLIST_FILE = "OneKeyCall/OneKeyCall-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.orthoguard.patient;
 				PRODUCT_NAME = OneKeyCall;
-				PROVISIONING_PROFILE = "89440021-90D9-46B6-9F86-48ED36EF96C0";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "89440021-90D9-46B6-9F86-48ED36EF96C0";
+				PROVISIONING_PROFILE = "2c1815bb-e063-425d-8c53-69767eedbdd9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2c1815bb-e063-425d-8c53-69767eedbdd9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -536,19 +534,21 @@
 		499B064617842C5B00DACBA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Wang Yupeng";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Wang Yupeng";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wanjiang mao (J8M6Z4P3DH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: wanjiang mao (J8M6Z4P3DH)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OneKeyCall/OneKeyCall-Prefix.pch";
 				INFOPLIST_FILE = "OneKeyCall/OneKeyCall-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)/usr/lib/system\"",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.orthoguard.patient;
 				PRODUCT_NAME = OneKeyCall;
-				PROVISIONING_PROFILE = "6170AD6C-3C87-44D0-A28A-4F48D5E7BCD7";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6170AD6C-3C87-44D0-A28A-4F48D5E7BCD7";
+				PROVISIONING_PROFILE = "2c1815bb-e063-425d-8c53-69767eedbdd9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2c1815bb-e063-425d-8c53-69767eedbdd9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
